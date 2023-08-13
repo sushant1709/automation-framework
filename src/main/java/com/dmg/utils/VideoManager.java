@@ -11,6 +11,7 @@ public class VideoManager {
     TestUtils utils = new TestUtils();
 
     public void startRecording(){
+
         ((CanRecordScreen) new DriverManager().getDriver()).startRecordingScreen();
     }
 

@@ -4,36 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2911da32-0935-4fe0-8bc7-97594b4383d9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android_Pixel 7/Server.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Web_Pixel 7/Server.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/CapabilitiesManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/DriverManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/ExtentReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/GlobalParams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/PropertyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/ServerManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/TestUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/DmgNewsPaperPageMobile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/stepdef/DmgNewsPaperMobilePageStepdef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/stepdef/TestMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/web/pages/DmgNewsPaperPageWeb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/web/stepdef/DmgNewspaperWebPageStepdef.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/runner/RunnerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/app/dmg_mail.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/dmgMobile.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/dmgWeb.feature" afterDir="false" />
+    <list default="true" id="2911da32-0935-4fe0-8bc7-97594b4383d9" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android_Pixel 7/Server.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Web_Pixel 7/Server.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dmg/utils/ExtentReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dmg/utils/GlobalParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/GlobalParams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dmg/utils/VideoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/VideoManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/DmgNewsPaperPageMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/DmgNewsPaperPageMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/stepdef/DmgNewsPaperMobilePageStepdef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/stepdef/DmgNewsPaperMobilePageStepdef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dmg/runner/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dmg/runner/RunnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/dmgMobile.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +65,7 @@
       <recent name="D:\DMG_Automation\automation-framework\src\test\resources\app" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dmg.utils" />
       <recent name="com.dmg.automation.mobile.pages" />
     </key>
   </component>
@@ -174,6 +157,25 @@
       <option name="presentableId" value="Default" />
       <updated>1691275133430</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1691888445196</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691888445196</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1691889834723</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691889834723</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

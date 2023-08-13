@@ -1,8 +1,6 @@
 package com.dmg.runner;
 
-
 import com.dmg.utils.DriverManager;
-import com.dmg.utils.ExtentReport;
 import com.dmg.utils.GlobalParams;
 import com.dmg.utils.ServerManager;
 import io.cucumber.junit.Cucumber;
@@ -20,14 +18,16 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
                 , "html:target/cucumber/report.html"
                 , "summary"
                 , "de.monochromata.cucumber.report.PrettyReports:target/cucumber-html-reports"
-                ,"com.cucumber.listener.ExtentCucumberFormatter:"}
+                ,"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+
+        }
         ,features = {"src/test/resources"}
         ,glue = {"com.dmg.automation"}
         ,snippets = CAMELCASE
         ,dryRun=false
         ,monochrome=true
         ,strict=true
-        ,tags = "@dmgWeb2"
+        ,tags = "@dmgMobile"
 
 )
 
@@ -39,10 +39,8 @@ public class RunnerTest {
         public static void initialize() throws Exception {
         GlobalParams params = new GlobalParams();
         params.initializeGlobalParams();
-        ExtentReport.reportSetup();
-      //  ThreadContext.put("ROUTINGKEY", params.getPlatformName() + "_"+ params.getDeviceName());
-
-     //   new ServerManager().startServer();
+        ThreadContext.put("ROUTINGKEY", params.getPlatformName() + "_"+ params.getDeviceName());
+        new ServerManager().startServer();
         new DriverManager().initializeDriver();
     }
 
@@ -50,7 +48,7 @@ public class RunnerTest {
         public static void quit(){
         DriverManager driverManager = new DriverManager();
         if(driverManager.getDriver() != null){
-          //  driverManager.getDriver().quit();
+           driverManager.getDriver().quit();
             driverManager.setDriver(null);
         }
         ServerManager serverManager = new ServerManager();

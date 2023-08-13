@@ -127,7 +127,7 @@ public class DmgNewsPaperPageMobile extends BasePage {
 
     public void verifyAndClickOnSignInButton() {
         click(button_SignIn);
-        Sleep(10);
+        Sleep(2);
     }
 
     public void enterUserNameAndPassword(String username, String password) {
@@ -158,40 +158,54 @@ public class DmgNewsPaperPageMobile extends BasePage {
 
         click(label_downloadedNewspaper);
         Sleep(5);
-        scroll(ScrollDirection.RIGHT,0.15);
-        utils.log().info("Scrolled right 1");
-        Sleep(5);
-        scroll(ScrollDirection.RIGHT,0.15);
-        utils.log().info("Scrolled right 2");
-
-        Sleep(10);
-        utils.log().info("waiting for tap");
-        tap(0.85,0.5);
-      //  tap(0.90,0.5);
-        Sleep(10);
-
-        utils.log().info("waiting for photo to open");
-        tap(0.5,0.2);
-
-        utils.log().info("Scrolled right 1");
-
-        Sleep(5);
-
-        int NoOfPhoto = Integer.parseInt(label_PhotoCount.getText().split(" of ")[1]);
-
-
-        for(int i=1; i<NoOfPhoto-1;i++){
-
-            scroll(ScrollDirection.RIGHT,0.1);
-            Sleep(1);
-        }
-
-        Sleep(5);
-        click(button_Close);
-
-
-
-
 
     }
+
+    public  void scrollRightOnNewspaper(int num){
+
+        for(int i=1;i<num;i++){
+
+            scroll(ScrollDirection.RIGHT,0.10);
+            utils.log().info("Scrolled right on Page : " +i);
+            Sleep(5);
+        }
+
+    }
+
+
+    public void tapOnImageGallaryOnALBPage(){
+
+        tap(0.85,0.5);
+        utils.log().info("clicked on Image gallary to open image  in ALB PAge");
+        Sleep(10);
+
+    }
+
+    public void tapONCameraIconToOpenFullScreen(){
+
+        tap(0.5,0.2);
+
+        utils.log().info("clicked on Camera icon to open image in Full Screen");
+        waitForClickable(button_Close);
+    }
+
+    public void traverseAllGallaryImage(){
+
+        int NoOfPhoto = Integer.parseInt(label_PhotoCount.getText().split(" of ")[1]);
+        for(int i=1; i<NoOfPhoto-1;i++){
+
+            scroll(ScrollDirection.RIGHT,0.08);
+            Sleep(2);
+        }
+
+    }
+
+
+    public void clickOnCloseButton(){
+
+        click(button_Close);
+        Sleep(5);
+    }
+
+
 }

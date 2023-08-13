@@ -10,85 +10,75 @@ public class DmgNewsPaperMobilePageStepdef {
 
     DmgNewsPaperPageMobile dmgnewspaperpage = new DmgNewsPaperPageMobile();
 
-    @Given("user navigate to main page")
-    public void userNavigateToMainPage() {
 
-        //    dmgnewspaperpage.clickONDenyNotification();
+    @Given("Launch the app")
+    public void launchTheApp() {
 
         dmgnewspaperpage.clickOnFailOverDeny();
         dmgnewspaperpage.clickOnContinueButton();
 
-
     }
-
-
-    @Then("user click on newspaper Tab")
-    public void userClickOnNewspaperTab() {
-
-    }
-
-    @Then("user scroll down to recent issues")
-    public void userScrollDownToRecentIssues() {
+    @Then("On Newspaper tab, scroll down to Recent issues and scroll right and tap on `See more` button")
+    public void onNewspaperTabScrollDownToRecentIssuesAndScrollRightAndTapOnSeeMoreButton() {
 
         dmgnewspaperpage.scrollTORecentIssues();
-    }
-
-    @Then("user scroll right to see more")
-    public void userScrollRightToSeeMore() {
-
         dmgnewspaperpage.swipeRightToSeeMore();
-    }
-
-    @Then("user click on see more link")
-    public void userClickOnSeeMoreLink() {
-
         dmgnewspaperpage.clickOnSeeMore();
     }
-
-    @Then("user click on {string} newspaper download button")
-    public void userClickOnNewspaperDownloadButton(String date) {
+    @Then("On Archive tab, tap to download {string} edition")
+    public void onArchiveTabTapToDownloadJuneEdition(String date) {
 
         dmgnewspaperpage.downloadNewspaper(date);
     }
-
-    @Then("user verifies sign in page opened")
-    public void userVerifiesSignInPageOpened() {
-
-        dmgnewspaperpage.verifyAndClickOnSignInButton();
-
-    }
-
-    @Then("user click on sign in button")
-    public void userClickOnSignInButton() {
+    @Then("On the paywall carousel, sign with credential provided {string} and {string}")
+    public void onThePaywallCarouselSignWithCredentialProvidedAnd(String uname, String password) {
 
         dmgnewspaperpage.verifyAndClickOnSignInButton();
-
-    }
-
-    @Then("user enter {string} and {string} and click sign in")
-    public void userEnterAndAndClickSignIn(String uname, String password) {
-
         dmgnewspaperpage.enterUserNameAndPassword(uname, password);
         dmgnewspaperpage.clickOnSIGNIN();
-
     }
-
-
-    @Then("user wait for newspaper to download")
-    public void userWaitForNewspaperToDownload() {
+    @Then("Wait for the edition to download completed")
+    public void waitForTheEditionToDownloadCompleted() {
 
         boolean invisibilityOfDownloadButton = dmgnewspaperpage.checkDownloadIsCompleted();
-
         Assert.assertEquals(true, invisibilityOfDownloadButton);
-
         System.out.println("Download complete");
-
     }
 
-    @Then("this is second Test")
-    public void thisIsSecondTest() {
 
-    dmgnewspaperpage.clickOnDownloadedNewspaper();
+
+    @Given("User is On the downloaded {string} edition")
+    public void userIsOnTheDownloadedJuneEdition(String date) {
+
+        dmgnewspaperpage.clickOnDownloadedNewspaper();
+
+    }
+    @Then("Navigate to Page {int} on PDF view")
+    public void navigateToPageOnPDFView(int page) {
+
+        dmgnewspaperpage.scrollRightOnNewspaper(page);
+    }
+
+    @Then("Tap on the Image Gallery is displayed on top of the ALB page")
+    public void tapOnTheImageGalleryIsDisplayedOnTopOfTheALBPage() {
+
+        dmgnewspaperpage.tapOnImageGallaryOnALBPage();
+    }
+    @Then("Tap on camera icon to open full screen")
+    public void tapOnCameraIconToOpenFullScreen() {
+
+        dmgnewspaperpage.tapONCameraIconToOpenFullScreen();
+    }
+    @Then("Traverse through all gallery images")
+    public void traverseThroughAllGalleryImages() {
+
+        dmgnewspaperpage.traverseAllGallaryImage();
+
+    }
+    @Then("On last image close the image by clicking on Close button to return to ALB")
+    public void onLastImageCloseTheImageByClickingOnCloseButtonToReturnToALB() {
+
+        dmgnewspaperpage.clickOnCloseButton();
 
     }
 
