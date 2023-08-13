@@ -6,13 +6,13 @@
 <img width="224" alt="image" src="https://github.com/sushant1709/automation-framework/assets/19224353/e41ed493-4de3-44fd-96f9-67c51b19657a">
 
 - # src/main/java
-- ##### com.dmg.utils  : contanins files to initilize driver,initilize property file, initilize server, ingest capability and Utils file for Logging
+- ##### com.dmg.utils  : contains files to initilize driver,initilize property file, initilize server, ingest capability and Utils file for Logging
 
 <img width="333" alt="image" src="https://github.com/sushant1709/automation-framework/assets/19224353/fc5d4ec7-f444-45c1-a161-c398d71f66ff">
 
 - # src/test/java
-- ##### com.dmg.automation.mobile : contains conatins pages and stepdef files for Mobile Automation
-- #### com.dmg.automation.mobile  : contains conatins pages and stepdef files for Web Automation
+- ##### com.dmg.automation.mobile : contains pages and stepdef files for Mobile Automation
+- #### com.dmg.automation.mobile  : contains  pages and stepdef files for Web Automation
 - ##### com.dmg.runner            : it contains Runner file to execute test
 
 - # src/test/resources
