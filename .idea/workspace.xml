@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2911da32-0935-4fe0-8bc7-97594b4383d9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Android_Pixel 7/Server.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Web_Pixel 7/Server.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/CapabilitiesManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/DriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/ExtentReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/GlobalParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/PropertyManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/ServerManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/DmgNewsPaperPageMobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/stepdef/DmgNewsPaperMobilePageStepdef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/stepdef/TestMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/web/pages/DmgNewsPaperPageWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/web/stepdef/DmgNewspaperWebPageStepdef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/dmg/runner/RunnerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/app/dmg_mail.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/dmgMobile.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/feature/dmgWeb.feature" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2TaJCSVBhwFPQLhiZ6sO8IxysCr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Appium/2.1 appium_browserstack-master&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DMG_Automation\automation-framework\src\test\resources\driver" />
+      <recent name="D:\DMG_Automation\automation-framework\src\main\resources" />
+      <recent name="D:\DMG_Automation\automation-framework\src\test\resources\app" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.dmg.automation.mobile.pages" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RunnerTest">
+    <configuration name="test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="automation-framework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmg.runner.test" />
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dmg.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testclass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dmg.utils.testclass" />
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dmg.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify the Newspaper edition is downloadable." type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/feature/dmgMobile.feature" />
+      <option name="GLUE" value="com.dmg.automation.mobile.stepdef" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="automation-framework" />
+      <option name="NAME_FILTER" value="^Verify the Newspaper edition is downloadable\.$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify the Newspaper edition is downloadable\.$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify the Newspaper edition is downloadable." />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunnerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="automation-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dmg.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dmg.runner" />
+      <option name="MAIN_CLASS_NAME" value="com.dmg.runner.RunnerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RunnerTest" />
+        <item itemvalue="Application.testclass" />
+        <item itemvalue="Application.test (1)" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Cucumber Java.Scenario: Verify the Newspaper edition is downloadable." />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2911da32-0935-4fe0-8bc7-97594b4383d9" name="Changes" comment="" />
+      <created>1691275133430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691275133430</updated>
+    </task>
+    <servers />
+  </component>
+</project>
