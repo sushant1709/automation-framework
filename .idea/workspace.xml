@@ -6,16 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2911da32-0935-4fe0-8bc7-97594b4383d9" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_Pixel 7/Server.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web_Pixel 7/Server.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dmg/utils/ExtentReport.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android_Pixel 7/Server.log" beforeDir="false" afterPath="$PROJECT_DIR$/Android_Pixel 7/Server.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dmg/utils/GlobalParams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/GlobalParams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dmg/utils/VideoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dmg/utils/VideoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/DmgNewsPaperPageMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/DmgNewsPaperPageMobile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/stepdef/DmgNewsPaperMobilePageStepdef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/stepdef/DmgNewsPaperMobilePageStepdef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/mobile/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/dmg/automation/web/pages/DmgNewsPaperPageWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dmg/automation/web/pages/DmgNewsPaperPageWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/dmg/runner/RunnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dmg/runner/RunnerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/dmgMobile.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/dmgMobile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/feature/dmgMobile.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/feature/dmgWeb.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/feature/dmgWeb.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691889834723</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit">
+      <created>1691936709848</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691936709848</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

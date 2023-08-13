@@ -35,7 +35,7 @@ public class BasePage {
     public WebDriver driver;
     TestUtils utils = new TestUtils();
     GlobalParams params = new GlobalParams();
-    public static final Duration TIME = Duration.ofSeconds(60);
+    public static final Duration TIME = Duration.ofSeconds(30);
     private static Duration SCROLL_DUR = Duration.ofMillis(800);
 
 

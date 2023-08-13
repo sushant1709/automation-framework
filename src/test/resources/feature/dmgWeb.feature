@@ -1,6 +1,6 @@
 @dmgWeb
 Feature: Web Scenario
-
+  @Web1
   Scenario: Verify the video player functionality
     Given User navigate to Daily mail Video Page
     Then  User accepts cookies
@@ -12,13 +12,11 @@ Feature: Web Scenario
     Then Click on the speaker icon again to unmute the video
      And When video is finished, next video should autoplay
 
-
-  @dmgWeb2
+ @web2
  Scenario Outline:Get the Position and Points for the given team from the Premier League table
     Given User navigate to Daily mail Video Page
     Then  User accepts cookies
     Then Click on Sport menu and scroll down to the Premier League table
-#    And  Click on the View all tables
     And Retrieve the Pos, PTS for the given team "<team>"
     Examples:
       | team |

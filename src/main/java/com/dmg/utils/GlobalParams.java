@@ -67,7 +67,7 @@ public class GlobalParams {
 
     public void initializeGlobalParams() {
         GlobalParams params = new GlobalParams();
-        params.setPlatformName(System.getProperty("platformName", "Android"));
+        params.setPlatformName(System.getProperty("platformName", "Web"));
         params.setUDID(System.getProperty("udid", "emulator-5554"));
         params.setDeviceName(System.getProperty("deviceName", "Pixel 7"));
 

@@ -3,10 +3,7 @@ package com.dmg.automation.web.pages;
 import com.dmg.automation.mobile.pages.BasePage;
 import com.dmg.utils.PropertyManager;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -55,6 +52,9 @@ public class DmgNewsPaperPageWeb extends BasePage {
     @FindBy(xpath = "//div[@class='vjs-control-bar']//div[contains(@class,'vjs-time-controls ')]/div[@class='vjs-duration-display']")
     WebElement label_TimeDuration;
 
+    @FindBy(xpath= "(//div[text()='Skip Ad'])[1]")
+    WebElement button_addSkip;
+
 
     @FindBy(xpath = "//div[contains(@class ,'page-header')]/ul/li[@class='sport']//a")
     WebElement link_SportTab;
@@ -62,16 +62,18 @@ public class DmgNewsPaperPageWeb extends BasePage {
     @FindBy(xpath = "//div[text()='Premier League']")
     WebElement label_PremierLeague;
 
+    @FindBy(id ="closeButton")
+    WebElement button_AdClose;
 
 
-    public WebElement labelTeamPos(String teamName){
+    public WebElement labelTeamPos(String teamName) {
 
-        return driver.findElement(By.xpath("//td[text()='"+teamName+"']/../td[1]"));
+        return driver.findElement(By.xpath("//td[text()='" + teamName + "']/../td[1]"));
     }
 
-    public WebElement labelTeamPoints(String teamName){
+    public WebElement labelTeamPoints(String teamName) {
 
-        return driver.findElement(By.xpath("//td[text()='"+teamName+"']/following-sibling::td[contains(@class,'pts')]"));
+        return driver.findElement(By.xpath("//td[text()='" + teamName + "']/following-sibling::td[contains(@class,'pts')]"));
     }
 
 
@@ -91,35 +93,35 @@ public class DmgNewsPaperPageWeb extends BasePage {
 
     public void acceptCookies() {
         click(button_AcceptCookies);
-        Sleep(5);
+        Sleep(10);
+        click(button_AdClose);
     }
 
     public void clickOnPlayVideoButton() {
 
         click(button_bigVideoPlay);
+        Sleep(10);
         visibilityOfElement(button_VideoPause).isEnabled();
         System.out.println("video play");
-        Sleep(5);
-
+        Sleep(2);
 
     }
 
     public void clickOnPausedButton() {
 
         click(button_VideoPause);
-        Sleep(5);
+        Sleep(2);
         System.out.println("Video paused");
         visibilityOfElement(button_VideoPlay).isEnabled();
         click(button_VideoPlay);
+
 
     }
 
     public void clickOnForwardArrow() {
         Sleep(2);
-        if (invisibilityOFElement(label_VideoAd)) {
-            click(button_NextVideo);
-            Sleep(3);
-        }
+        click(button_NextVideo);
+     //   waitForAdToComplete();
         System.out.println("video next");
 
     }
@@ -132,11 +134,14 @@ public class DmgNewsPaperPageWeb extends BasePage {
 
     public void clickOnBackArrow() {
 
-        moveToWebElement(button_PreviousVideo);
-        click(button_PreviousVideo);
-        click(button_PreviousVideo);
-        System.out.println("video previous");
         Sleep(5);
+        click(button_PreviousVideo);
+        click(button_PreviousVideo);
+        Sleep(5);
+        waitForAdToComplete();
+        Sleep(2);
+        System.out.println("video previous");
+
 
     }
 
@@ -170,17 +175,27 @@ public class DmgNewsPaperPageWeb extends BasePage {
     }
 
 
+    public void waitForAdToComplete(){
+
+        WebDriverWait wait = new WebDriverWait(driver ,Duration.ofSeconds(60));
+      wait.until(ExpectedConditions.invisibilityOf(label_VideoAd));
+
+    }
+
+
     public void verifyNExtVideoAutoplay() {
 
-
-        String currentVideoTitle = getVideoTitle();
-        System.out.println(currentVideoTitle);
-        Sleep(getTotalPlayTimeInSec());
-        Sleep(5);
-        String currentvideoTitle2 = getVideoTitle();
-        System.out.println(currentvideoTitle2);
-
-        Assert.assertEquals(currentVideoTitle, currentvideoTitle2);
+        String currentVideoTitle = null;
+        String currentvideoTitle2 = null;
+        if (invisibilityOFElement(label_VideoAd)) {
+            currentVideoTitle = getVideoTitle();
+            System.out.println(currentVideoTitle);
+            Sleep(getTotalPlayTimeInSec());
+            Sleep(2);
+            currentvideoTitle2 = getVideoTitle();
+            System.out.println(currentvideoTitle2);
+        }
+        Assert.assertNotEquals(currentVideoTitle, currentvideoTitle2);
 
 
     }
@@ -197,13 +212,13 @@ public class DmgNewsPaperPageWeb extends BasePage {
     }
 
 
-    public  String retrievePointForTeam(String teamName){
+    public String retrievePointForTeam(String teamName) {
 
         return getText(labelTeamPoints(teamName));
 
     }
 
-    public  String retrievePositionForTeam(String teamName){
+    public String retrievePositionForTeam(String teamName) {
 
         return getText(labelTeamPos(teamName));
 

@@ -27,20 +27,23 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
         ,dryRun=false
         ,monochrome=true
         ,strict=true
-        ,tags = "@dmgMobile"
+        ,tags = "@web2"
 
 )
 
 
 public class RunnerTest {
 
-
+        public static GlobalParams params ;
         @BeforeClass
         public static void initialize() throws Exception {
-        GlobalParams params = new GlobalParams();
+
+            params = new GlobalParams();
         params.initializeGlobalParams();
-        ThreadContext.put("ROUTINGKEY", params.getPlatformName() + "_"+ params.getDeviceName());
-        new ServerManager().startServer();
+        if(params.getPlatformName()!="Web") {
+            ThreadContext.put("ROUTINGKEY", params.getPlatformName() + "_" + params.getDeviceName());
+            new ServerManager().startServer();
+        }
         new DriverManager().initializeDriver();
     }
 
@@ -51,10 +54,12 @@ public class RunnerTest {
            driverManager.getDriver().quit();
             driverManager.setDriver(null);
         }
-        ServerManager serverManager = new ServerManager();
-        if(serverManager.getServer() != null){
-            serverManager.getServer().stop();
-        }
+        if(params.getPlatformName()!="Web"){
+                ServerManager serverManager = new ServerManager();
+                if (serverManager.getServer() != null) {
+                    serverManager.getServer().stop();
+                }
+            }
     }
 
 

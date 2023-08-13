@@ -1,6 +1,5 @@
 @dmgMobile
 Feature: Mobile Scenario
-
   Scenario Outline: Verify the Newspaper edition is downloadable.
     Given Launch the app
     Then On Newspaper tab, scroll down to Recent issues and scroll right and tap on `See more` button
