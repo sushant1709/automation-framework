@@ -12,7 +12,7 @@
 
 - # src/test/java
 - ##### com.dmg.automation.mobile : contains pages and stepdef files for Mobile Automation
-- #### com.dmg.automation.mobile  : contains  pages and stepdef files for Web Automation
+- ##### com.dmg.automation.mobile  : contains  pages and stepdef files for Web Automation
 - ##### com.dmg.runner            : it contains Runner file to execute test
 
 - # src/test/resources
